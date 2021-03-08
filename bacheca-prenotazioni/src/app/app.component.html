@@ -17,57 +17,64 @@
       <!--Label per nome dell'articolo-->
       <label for="title">Nome</label>
       <!--Assegnare al input un id che poi verrà ripreso dentro la nostra funzione-->
-      <input name="nome" #newnome class="form-control">
+      <input name="nome" #newnome class="form-control" />
     </div>
-
 
     <div class="form-group">
       <!--Label per nome dell'articolo-->
       <label for="title">Cognome</label>
       <!--Assegnare al input un id che poi verrà ripreso dentro la nostra funzione-->
-      <input name="cognome" #newcognome class="form-control">
+      <input name="cognome" #newcognome class="form-control" />
     </div>
 
     <div class="form-group">
       <!--Label per nome dell'articolo-->
       <label for="title">Indirizzo</label>
       <!--Assegnare al input un id che poi verrà ripreso dentro la nostra funzione-->
-      <input name="indirizzo" #newindirizzo class="form-control">
+      <input name="indirizzo" #newindirizzo class="form-control" />
     </div>
 
     <div class="form-group">
       <!--Label per nome dell'articolo-->
       <label for="title">Telefono</label>
       <!--Assegnare al input un id che poi verrà ripreso dentro la nostra funzione-->
-      <input name="telefono" #newTelefono class="form-control">
+      <input name="telefono" #newTelefono class="form-control" />
     </div>
 
     <div class="form-group">
       <!--Label per nome dell'articolo-->
       <label for="title">Email</label>
       <!--Assegnare al input un id che poi verrà ripreso dentro la nostra funzione-->
-      <input name="email" #newEmail class="form-control">
+      <input name="email" #newEmail class="form-control" />
     </div>
 
     <div class="form-group">
       <!--Label per nome dell'articolo-->
       <label for="title">DatadiPrenotazione</label>
       <!--Assegnare al input un id che poi verrà ripreso dentro la nostra funzione-->
-      <input name="datadiprenotazione" #newdatadiprenotazione class="form-control">
+      <input
+        name="datadiprenotazione"
+        #newdatadiprenotazione
+        class="form-control"
+      />
     </div>
     <div class="form-group">
       <!--Label per nome dell'articolo-->
       <label for="title">oradiprenotazione</label>
       <!--Assegnare al input un id che poi verrà ripreso dentro la nostra funzione-->
-      <input name="oradiprenotazione" #neworadiprenotazione class="form-control">
+      <input
+        name="oradiprenotazione"
+        #neworadiprenotazione
+        class="form-control"
+      />
     </div>
 
     <!--click è un metodo preimpostato di angular come jfx a seguire nome del moetodo creato da noi-->
     <!--Inserire dentro la funzione del bottone i due id delle nostre due variabili di input-->
-    <button>
-      Sumbit Link
-    </button>
 
-
+    <button type="button" (click)="makeCompactPost()">Make Post</button>
+    <div *ngIf="loading">loading...</div>
+    <pre>{{ data | json }}</pre>
+   
   </form>
 </div>
