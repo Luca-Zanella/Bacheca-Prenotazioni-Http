@@ -2,19 +2,17 @@
 {
     "posts": [
         {
-            "title": "google",
-            "link": "https://www.google.com",
-            "votes": 10
+            "nome": "Luca",
+            "cognome": "Zanella"
+            
         },
         {
-            "title": "youtube",
-            "link": "https://www.youtube.com",
-            "votes": 10
+           "nome": "Pippo",
+            "cognome": "pluto"
         },
         {
-            "title": "reddit",
-            "link": "https://www.reddit.com",
-            "votes": 10
+           "nome": "paperino",
+            "cognome": "topolino"
         }
     ]
 }
